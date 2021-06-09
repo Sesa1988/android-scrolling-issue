@@ -3,7 +3,7 @@
 **Steps to reproduce**
 - Start app in devmode
 - Go to Market
-- Peform a scroll gesture with little more pressure and faster
+- Peform a scroll gesture with little more pressure and faster (smaller drag gestures perform normal)
 
 **Result**
 - Lists gets scrolled way to fast and scrolls almost with out a stop
