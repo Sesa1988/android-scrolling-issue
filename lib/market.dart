@@ -1,3 +1,4 @@
+import 'package:android_scrolling_issue/asset_card.dart';
 import 'package:flutter/material.dart';
 
 class Market extends StatefulWidget {
@@ -20,15 +21,14 @@ class _MarketState extends State<Market> with AutomaticKeepAliveClientMixin {
 
   Widget _main() {
     return ListView.separated(
-      separatorBuilder: (context, index) => Divider(height: 1),
+      separatorBuilder: (context, index) => Divider(
+        height: 1,
+        color: Colors.white,
+      ),
       shrinkWrap: true,
       itemCount: 200,
       itemBuilder: (context, index) {
-        return Container(
-          height: 70,
-          child: Text('market' + index.toString()),
-          color: Colors.red[50],
-        );
+        return AssetCard(index.toString(), index.toString(), 'o', index);
       },
     );
   }
