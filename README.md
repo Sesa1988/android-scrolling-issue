@@ -3,7 +3,7 @@
 **Steps to reproduce**
 - Start app in devmode
 - Go to Market
-- Peform a scroll gesture little bit faster
+- Peform a scroll gesture with little more pressure and faster
 
 **Result**
 - Lists gets scrolled way to fast and far
