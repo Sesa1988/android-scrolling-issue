@@ -6,5 +6,5 @@
 - Peform a scroll gesture with little more pressure and faster
 
 **Result**
-- Lists gets scrolled way to fast and far
+- Lists gets scrolled way to fast and scrolls almost with out a stop
 - On version 2.0.6 this does not happen, only after the update on 2.2.1
