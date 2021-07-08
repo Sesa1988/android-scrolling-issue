@@ -1,6 +1,4 @@
-import 'package:android_scrolling_issue/market.dart';
-import 'package:android_scrolling_issue/market_app_bar.dart';
-import 'package:android_scrolling_issue/trending.dart';
+import 'package:android_scrolling_issue/asset_card.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,18 +29,17 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: DefaultTabController(
-        length: 2,
-        child: Scaffold(
-          appBar: MarketAppBar(),
-          body: TabBarView(
-            children: [
-              Market(),
-              Trending(),
-            ],
-          ),
-        ),
+    return Scaffold(
+      body: ListView.separated(
+        separatorBuilder: (context, index) => Divider(height: 1),
+        itemCount: 500,
+        itemBuilder: (context, index) {
+          return AssetCard(index.toString(), index.toString(), '', index);
+          /* return Container(
+            padding: EdgeInsets.all(24),
+            child: Text(index.toString()),
+          ); */
+        },
       ),
     );
   }
