@@ -1,6 +1,8 @@
-https://github.com/flutter/flutter/issues/84197#issuecomment-876782491
-
 # android_scrolling_issue
+
+**Open issue**
+
+https://github.com/flutter/flutter/issues/84197#issuecomment-876782491
 
 **Steps to reproduce**
 - Start app in devmode
